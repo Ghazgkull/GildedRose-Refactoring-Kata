@@ -11,10 +11,11 @@ we can begin selling a new category of items. First an introduction to our syste
 
 	- All items have a SellIn value which denotes the number of days we have to sell the item
 	- All items have a Quality value which denotes how valuable the item is
-	- At the end of each day our system lowers both values for every item
+	- At the end of each day our system adjusts both values for every item
 
 Pretty simple, right? Well this is where it gets interesting:
 
+    - Item quality generally degrades by 1 as the SellIn date approaches
 	- Once the sell by date has passed, Quality degrades twice as fast
 	- The Quality of an item is never negative
 	- "Aged Brie" actually increases in Quality the older it gets
